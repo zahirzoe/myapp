@@ -26,7 +26,7 @@
                       <execution>
                         <phase>package</phase>
                          <configuration>
-                <webappDirectory>target/${env}/deploy</webappDirectory>
+                <webappDirectory>~/jbossas/standalone/deployements</webappDirectory>
                 <archiveClasses>true</archiveClasses>
             </configuration>
             <goals>
