@@ -24,8 +24,9 @@
                 <version>2.3</version>
                 <configuration>
                     <filteringDeploymentDescriptors>true</filteringDeploymentDescriptors>
+                      <webappDirectory>jbossas/standalone/deployements</webappDirectory>
                     <warName>myapp</warName>
-                    <targetPath>jbossas/standalone/deployements</targetPath>
+                    <targetPath>jbossas/standalone/deployements</targetPath>     
                 </configuration>
             </plugin>
             <plugin>
