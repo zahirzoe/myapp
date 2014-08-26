@@ -23,7 +23,7 @@
                 <version>2.3</version>
                 <configuration>
                     <filteringDeploymentDescriptors>true</filteringDeploymentDescriptors>
-                    <warName>target/myapp.war</warName>
+                    <warName>target/myapp</warName>
                 </configuration>
             </plugin>
             <plugin>
