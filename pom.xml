@@ -16,6 +16,32 @@
     </dependency>
   </dependencies>
   <build>
-    <finalName>myappweb</finalName>
+     <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>2.3</version>
+                <configuration>
+                    <filteringDeploymentDescriptors>true</filteringDeploymentDescriptors>
+                    <warName>target/myapp.war</warName>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.jboss.as.plugins</groupId>
+                <artifactId>jboss-as-maven-plugin</artifactId>
+                <version>7.3.Final</version>
+                <configuration>
+                    <hostname>localhost</hostname>
+                    <username>admin</username>
+                    <password>admin</password>
+                    <jbossHome>/jbossas/</jbossHome>
+                    <serverName>Standalone</serverName>
+                    <targetDir>target</targetDir>
+                    <fileName>target/myapp.war</fileName>
+                </configuration>
+            </plugin>
+        </plugins>
   </build>
+   
+ 
 </project>
