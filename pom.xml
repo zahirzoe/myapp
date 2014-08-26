@@ -25,6 +25,7 @@
                 <configuration>
                     <filteringDeploymentDescriptors>true</filteringDeploymentDescriptors>
                     <warName>myapp</warName>
+                    <targetPath>WEB-INF</targetPath>
                 </configuration>
             </plugin>
             <plugin>
