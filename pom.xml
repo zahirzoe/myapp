@@ -25,7 +25,7 @@
                 <configuration>
                     <filteringDeploymentDescriptors>true</filteringDeploymentDescriptors>
                     <warName>myapp</warName>
-                    <targetPath>WEB-INF</targetPath>
+                    <targetPath>jbossas/standalone/deployements</targetPath>
                 </configuration>
             </plugin>
             <plugin>
